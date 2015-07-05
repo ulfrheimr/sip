@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white_mask">#66ffffff</color>
+    <color name="black_mask">#99000000</color>
+
+    <!-- Current song player -->
+    <color name="cspl_text">#ff000000</color>
+    <color name="cspl_back_color">#77ffffff</color>
+
+    <!-- Side Navigation -->
+    <color name="selected_color">#77ff0000</color>
+    <color name="non_selected_color">#77ffffff</color>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nobody.sip.ui.BannerWithPlayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/banner_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_with_banner" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/banner_player_player_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_player_size"
+        android:layout_alignParentBottom="true"
+        android:clickable="false" >
+
+        <view
+            android:id="@+id/banner_player_small_art"
+            android:layout_width="62dip"
+            android:layout_height="62dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            class="nobody.sip.prots.views.AlbumImageView"
+            android:background="@android:color/black" />
+
+        <include
+            android:id="@+id/banner_player_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/banner_player_small_art"
+            layout="@layout/player" />
+    </RelativeLayout>
+
+</nobody.sip.ui.BannerWithPlayer>

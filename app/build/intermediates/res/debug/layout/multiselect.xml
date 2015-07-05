@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nobody.sip.ui.MultiSelect xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/multi_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/multi_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_light"
+        android:clickable="true"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/multi_button_container" >
+
+            <TextView
+                android:id="@+id/multi_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/multi_adding"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/multi_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/multi_item_text"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/multi_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/multi_item_count"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/multi_desc_item"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/multi_button_container"
+            android:layout_width="105dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/multi_ok"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/ok"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/multi_toggler"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_toLeftOf="@+id/multi_ok"
+                android:background="@android:color/black"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/multi_mode_toggler"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginRight="3dip"
+                android:layout_toLeftOf="@+id/multi_toggler"
+                android:background="@drawable/clear"
+                android:clickable="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</nobody.sip.ui.MultiSelect><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/multiselect.xml -->

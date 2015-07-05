@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nobody.sip.ui.SideNavWithPlayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sidenav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/sidenav_genres"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:descendantFocusability="beforeDescendants" >
+
+            <ImageView
+                android:id="@+id/sidenav_genres_icon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@android:color/black" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@+id/sidenav_genres_icon"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/sidenav_genres_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/sidenav_genres_icon"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:text="@string/genres"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sidenav_artists"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/sidenav_genres"
+            android:clickable="true"
+            android:descendantFocusability="beforeDescendants" >
+
+            <ImageView
+                android:id="@+id/sidenav_artists_icon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@android:color/black" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@+id/sidenav_artists_icon"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/sidenav_artists_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/sidenav_artists_icon"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:text="@string/artists"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sidenav_albums"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/sidenav_artists"
+            android:clickable="true"
+            android:descendantFocusability="beforeDescendants" >
+
+            <ImageView
+                android:id="@+id/sidenav_albums_icon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@android:color/black" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@+id/sidenav_albums_icon"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/sidenav_albums_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/sidenav_albums_icon"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:text="@string/albums"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sidenav_songs"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/sidenav_albums"
+            android:clickable="true"
+            android:descendantFocusability="beforeDescendants" >
+
+            <ImageView
+                android:id="@+id/sidenav_songs_icon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@android:color/black" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@+id/sidenav_songs_icon"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/sidenav_songs_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/sidenav_songs_icon"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:text="@string/songs"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sidenav_playlists"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/sidenav_songs"
+            android:clickable="true"
+            android:descendantFocusability="beforeDescendants" >
+
+            <ImageView
+                android:id="@+id/sidenav_playlists_icon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@android:color/black" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@+id/sidenav_playlists_icon"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/sidenav_playlists_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/sidenav_playlists_icon"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:text="@string/playlists"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true" >
+
+        <include
+            android:id="@+id/sidenav_player"
+            layout="@layout/current_song_player" />
+
+        <RelativeLayout
+            android:id="@+id/sidenav_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_mask"
+            android:clickable="true"
+            android:visibility="gone" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</nobody.sip.ui.SideNavWithPlayer><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/sidenav_with_player.xml -->

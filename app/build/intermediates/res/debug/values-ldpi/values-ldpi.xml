@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/values-ldpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="fragment_left_margin">5dp</dimen>
+</resources>

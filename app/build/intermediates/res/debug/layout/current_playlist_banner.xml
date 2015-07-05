@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nobody.sip.ui.CurrentPlaylistBanner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light" >
+
+    <ImageView
+        android:id="@+id/cp_banner_art"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_green_light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/cp_banner_art" >
+
+        <TextView
+            android:id="@+id/cp_banner_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:fontFamily="sans-serif"
+            android:paddingTop="2dip"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cp_banner_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cp_banner_artist"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="2dip"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cp_banner_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cp_banner_album"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="2dip"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" >
+        </TextView>
+    </RelativeLayout>
+
+</nobody.sip.ui.CurrentPlaylistBanner><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/current_playlist_banner.xml -->

@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="fragment_left_margin">5dp</dimen>
+</resources>

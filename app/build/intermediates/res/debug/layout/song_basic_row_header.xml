@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/bsrow_header"
+        android:layout_width="match_parent"
+        android:layout_height="15dip"
+        android:background="@android:color/holo_blue_bright" >
+
+        <TextView
+            android:id="@+id/bsrow_header_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bsrow_header" >
+
+        <ImageView
+            android:id="@+id/bsrow_options"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:clickable="true"
+            android:paddingRight="6dip" />
+
+        <TextView
+            android:id="@+id/bsrow_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/bsrow_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bsrow_options"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="35dip"
+            android:paddingTop="2dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bsrow_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bsrow_title"
+            android:layout_toLeftOf="@+id/bsrow_options"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="38dip"
+            android:paddingTop="2dip"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/song_basic_row_header.xml -->

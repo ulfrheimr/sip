@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nobody.sip.ui.DetailsBanner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light" >
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/details_banner_art"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_green_light" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/details_banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:fontFamily="sans-serif"
+            android:paddingTop="2dip"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/details_banner_edit"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginRight="7dip"
+            android:background="@android:color/holo_purple" />
+    </RelativeLayout>
+
+</nobody.sip.ui.DetailsBanner><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/details_banner.xml -->

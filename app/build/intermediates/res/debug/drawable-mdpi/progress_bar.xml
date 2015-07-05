@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:antialias="true"
+        android:dither="true"
+        android:drawable="@drawable/seek_non_played">
+    </item>
+
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/seek_played">
+    </item>
+
+</layer-list><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/drawable-mdpi/progress_bar.xml -->

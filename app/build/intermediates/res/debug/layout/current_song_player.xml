@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nobody.sip.ui.CurrentSongPlayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cspl_song_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cspl_principal_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/cspl_top_container"
+            android:layout_width="match_parent"
+            android:layout_height="62dip"
+            android:clickable="false" >
+
+            <view
+                android:id="@+id/cspl_small_art"
+                android:layout_width="62dip"
+                android:layout_height="62dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                class="nobody.sip.prots.views.AlbumImageView"
+                android:background="@android:color/black" />
+
+            <include
+                android:id="@+id/cspl_player"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/cspl_small_art"
+                layout="@layout/player" />
+
+            <RelativeLayout
+                android:id="@+id/cspl_small_seekbar_container"
+                android:layout_width="match_parent"
+                android:layout_height="7dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="1dip"
+                android:clickable="true" >
+
+                <SeekBar
+                    android:id="@+id/cspl_small_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_alignParentTop="true"
+                    android:clickable="false"
+                    android:maxHeight="2dip"
+                    android:minWidth="1px"
+                    android:progressDrawable="@drawable/progress_bar"
+                    android:thumb="@drawable/thumb_seekbar" />
+
+                <ImageView
+                    android:id="@+id/cspl_drop_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/cspl_small_seekbar"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@android:color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cspl_top_container"
+            android:background="@android:color/white"
+            android:descendantFocusability="beforeDescendants" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</nobody.sip.ui.CurrentSongPlayer><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/current_song_player.xml -->

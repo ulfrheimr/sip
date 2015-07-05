@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nobody.sip.ui.LayoutWithBanner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lay_banner_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_full_size" >
+
+        <RelativeLayout
+            android:id="@+id/lay_banner_inner_top_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true" >
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/lay_banner_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:maxHeight="3dip"
+            android:minWidth="1px"
+            android:progressDrawable="@drawable/progress_bar"
+            android:thumb="@drawable/thumb_seekbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lay_banner_user_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_banner_top_container" >
+    </RelativeLayout>
+
+</nobody.sip.ui.LayoutWithBanner><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/layout_with_banner.xml -->

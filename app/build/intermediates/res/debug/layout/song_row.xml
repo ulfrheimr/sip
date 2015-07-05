@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <view
+        android:id="@+id/srow_art"
+        android:layout_width="58dip"
+        android:layout_height="58dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        class="nobody.sip.prots.views.AlbumImageView"
+        android:background="@android:color/holo_orange_dark"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/srow_options"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:paddingRight="6dip" />
+
+    <TextView
+        android:id="@+id/srow_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/srow_options"
+        android:layout_toRightOf="@+id/srow_art"
+        android:fontFamily="sans-serif"
+        android:paddingTop="1dip"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/srow_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/srow_title"
+        android:layout_toLeftOf="@+id/srow_options"
+        android:layout_toRightOf="@+id/srow_art"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="1dip"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/srow_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/srow_artist"
+        android:layout_toLeftOf="@+id/srow_options"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="1dip"
+        android:paddingRight="3dip"
+        android:paddingTop="1dip"
+        android:textSize="14sp" >
+    </TextView>
+
+</RelativeLayout><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/song_row.xml -->

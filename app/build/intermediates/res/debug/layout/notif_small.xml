@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dip" >
+
+    <ImageView
+        android:id="@+id/s_notif_close"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@android:color/holo_blue_light" />
+
+    <ImageView
+        android:id="@+id/s_notif_art"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_blue_light"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/s_notif_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toLeftOf="@+id/s_notif_close"
+        android:layout_toRightOf="@+id/s_notif_art"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/s_notif_art"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/s_notif_rwd"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="9dip"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/s_notif_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="9dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/s_notif_fwd"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="9dip"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:clickable="true" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/src/main/res/layout/notif_small.xml -->

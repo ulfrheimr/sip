@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/ulfrheimr/plugins/android/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-8c02361e7b81c95336df78ac1cc715fc3354a179.jar" />
+    </item>
+    <item
+        jar="/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/libs/renderscript-v8.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="daa96940c1ddb41cb50c36c4fa113edc5f81f09e">
+        <dex dex="/Users/ulfrheimr/Documents/m.ind/dev-sip-player/app/build/intermediates/pre-dexed/debug/renderscript-v8-f258b29b84603352593a9180ab0c4d436d0afc52.jar" />
+    </item>
+
+</items>
